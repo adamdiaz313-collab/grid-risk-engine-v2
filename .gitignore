@@ -216,3 +216,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Grid Risk Engine V2 local data and model artifacts
+data/raw/*
+data/interim/*
+data/processed/*
+models/*
+reports/figures/*
+reports/metrics/*
+
+# Keep documentation files inside ignored data folders
+!data/README.md
