@@ -12,10 +12,25 @@ RAW_DIR = DATA_DIR / "raw"
 INTERIM_DIR = DATA_DIR / "interim"
 PROCESSED_DIR = DATA_DIR / "processed"
 
+EAGLEI_RAW_DIR = RAW_DIR / "eaglei"
+EAGLEI_INTERIM_DIR = INTERIM_DIR / "eaglei"
+EAGLEI_STANDARDIZED_DIR = EAGLEI_INTERIM_DIR / "standardized"
+EAGLEI_HOURLY_DIR = EAGLEI_INTERIM_DIR / "hourly"
+
 MODELS_DIR = PROJECT_ROOT / "models"
 REPORTS_DIR = PROJECT_ROOT / "reports"
 FIGURES_DIR = REPORTS_DIR / "figures"
 METRICS_DIR = REPORTS_DIR / "metrics"
+
+
+# ============================================
+# DATA SOURCE SETTINGS
+# ============================================
+
+EAGLEI_FIGSHARE_ARTICLE_ID = 24237376
+EAGLEI_FIGSHARE_API_URL = (
+    f"https://api.figshare.com/v2/articles/{EAGLEI_FIGSHARE_ARTICLE_ID}"
+)
 
 
 # ============================================
@@ -42,6 +57,10 @@ DIRECTORIES = [
     RAW_DIR,
     INTERIM_DIR,
     PROCESSED_DIR,
+    EAGLEI_RAW_DIR,
+    EAGLEI_INTERIM_DIR,
+    EAGLEI_STANDARDIZED_DIR,
+    EAGLEI_HOURLY_DIR,
     MODELS_DIR,
     REPORTS_DIR,
     FIGURES_DIR,
